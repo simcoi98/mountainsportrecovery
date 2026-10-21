@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mountain Sport Recovery | Acupuncture for Athletes in Denver, CO</title>
+<meta name="description" content="Mountain Sport Recovery is the Denver acupuncture practice of Kate Cauley, L.Ac. Sports recovery, injury care and performance support for skiers, runners, climbers, cyclists and weekend warriors.">
+<meta property="og:title" content="Mountain Sport Recovery | Denver Acupuncture for Athletes">
+<meta property="og:description" content="Recover faster. Move better. Get back to the mountains. Acupuncture with Kate Cauley, L.Ac. in Denver, Colorado.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mountainsportrecovery.com/">
+<meta name="theme-color" content="#0f2a3a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2a3a'/%3E%3Cpath d='M6 50 24 22l9 13 7-9 18 24z' fill='%23ff7a45'/%3E%3Cpath d='M24 22l-6 9 4-2 3 3 3-4z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Mountain Sport Recovery",
+  "description": "Acupuncture for sports recovery and performance with Kate Cauley, L.Ac.",
+  "url": "https://mountainsportrecovery.com/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Denver", "addressRegion": "CO", "addressCountry": "US" },
+  "founder": { "@type": "Person", "name": "Kate Cauley" }
+}
+</script>
+<style>
+:root{
+  --night:#0b1f2c; --deep:#0f2a3a; --pine:#1d4d4f; --teal:#2e8b8b; --mist:#e8f1f1;
+  --snow:#fbfdfd; --ember:#ff7a45; --ember-dk:#e2602b; --gold:#ffc27a; --ink:#16303f; --muted:#5a7080;
+  --radius:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--snow);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+section{padding:96px 0}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ember-dk);margin-bottom:14px}
+h2{font-size:clamp(2rem,4.4vw,3.1rem);font-weight:800;margin-bottom:18px}
+.lead{font-size:1.12rem;color:var(--muted);max-width:60ch}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem;transition:transform .2s,box-shadow .2s,background .2s;border:2px solid transparent;cursor:pointer}
+.btn-primary{background:var(--ember);color:#fff;box-shadow:0 10px 30px -8px rgba(255,122,69,.7)}
+.btn-primary:hover{background:var(--ember-dk);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+/* Nav */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+header.scrolled{background:rgba(11,31,44,.92);backdrop-filter:blur(10px);box-shadow:0 4px 24px rgba(0,0,0,.2)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:Fraunces,serif;font-weight:800;font-size:1.15rem}
+.logo svg{width:34px;height:34px}
+.nav ul{display:flex;gap:30px;list-style:none;align-items:center}
+.nav ul a{color:rgba(255,255,255,.88);text-decoration:none;font-size:.95rem;font-weight:500}
+.nav ul a:hover{color:var(--gold)}
+.nav .btn{padding:10px 20px;font-size:.92rem}
+.menu-btn{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;overflow:hidden;padding:140px 0 200px;
+  background:linear-gradient(180deg,#0b1f2c 0%,#173f56 38%,#b9604a 82%,#ff9b5e 100%)}
+.stars{position:absolute;inset:0;background-image:
+  radial-gradient(1.5px 1.5px at 12% 18%,#fff,transparent),radial-gradient(1px 1px at 28% 8%,#fff,transparent),
+  radial-gradient(1.5px 1.5px at 44% 24%,#fff,transparent),radial-gradient(1px 1px at 62% 12%,#fff,transparent),
+  radial-gradient(1.5px 1.5px at 78% 20%,#fff,transparent),radial-gradient(1px 1px at 90% 9%,#fff,transparent),
+  radial-gradient(1px 1px at 8% 36%,#fff,transparent),radial-gradient(1px 1px at 70% 34%,#fff,transparent);opacity:.8;animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.35}}
+.sun{position:absolute;right:14%;bottom:26%;width:230px;height:230px;border-radius:50%;
+  background:radial-gradient(circle,#ffe2a8 0%,#ffb066 45%,rgba(255,150,80,0) 70%);filter:blur(2px);animation:glow 6s ease-in-out infinite alternate}
+@keyframes glow{to{transform:scale(1.12);opacity:.85}}
+.hero-inner{position:relative;z-index:3;max-width:700px}
+.hero h1{font-size:clamp(2.8rem,7.4vw,5.4rem);font-weight:800;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{font-size:1.2rem;color:rgba(255,255,255,.88);max-width:52ch;margin-bottom:34px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.badges{display:flex;gap:22px;flex-wrap:wrap;margin-top:44px;font-size:.9rem;color:rgba(255,255,255,.8)}
+.badges span::before{content:"✦ ";color:var(--gold)}
+.ridge{position:absolute;left:0;right:0;bottom:-1px;width:100%;display:block;z-index:2}
+.ridge-back{z-index:1}
+
+/* Marquee strip */
+.strip{background:var(--night);color:rgba(255,255,255,.75);padding:20px 0;overflow:hidden;white-space:nowrap}
+.strip div{display:inline-block;animation:slide 32s linear infinite;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem}
+.strip span{margin:0 26px;color:var(--ember)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* Services */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:52px}
+.card{background:#fff;border-radius:var(--radius);padding:34px 28px;border:1px solid #dfeaea;transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 50px -22px rgba(15,42,58,.35)}
+.card::after{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--ember),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.card:hover::after{transform:scaleX(1)}
+.icon{width:60px;height:60px;border-radius:16px;background:var(--mist);display:grid;place-items:center;margin-bottom:20px}
+.icon svg{width:32px;height:32px;stroke:var(--pine);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.4rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.98rem}
+
+/* Athletes */
+.athletes{background:var(--mist)}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.chip{background:#fff;border:1px solid #cfe0e0;padding:12px 22px;border-radius:999px;font-weight:600;color:var(--pine);display:flex;gap:8px;align-items:center;transition:.2s}
+.chip:hover{background:var(--pine);color:#fff;transform:translateY(-2px)}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+
+/* Process */
+.process{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+.process h2{color:#fff}.process .lead{color:rgba(255,255,255,.7)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;margin-top:52px;counter-reset:s}
+.step{border-top:2px solid rgba(255,255,255,.18);padding-top:24px;position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:Fraunces,serif;font-size:3rem;font-weight:800;color:var(--ember);display:block;margin-bottom:6px}
+.step h3{font-size:1.3rem;margin-bottom:8px}
+.step p{color:rgba(255,255,255,.7);font-size:.97rem}
+
+/* About */
+.portrait{aspect-ratio:4/5;border-radius:var(--radius);background:linear-gradient(160deg,var(--pine),var(--night));position:relative;overflow:hidden;box-shadow:0 30px 60px -30px rgba(11,31,44,.6)}
+.portrait svg{position:absolute;inset:0;width:100%;height:100%}
+.portrait .tag{position:absolute;left:18px;bottom:18px;right:18px;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);color:#fff;padding:14px 18px;border-radius:14px;font-size:.9rem}
+.about p{margin-bottom:16px;color:var(--muted)}
+.creds{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.creds div{background:var(--mist);padding:10px 18px;border-radius:12px;font-weight:600;font-size:.9rem;color:var(--pine)}
+
+/* FAQ */
+.faq{background:var(--mist)}
+details{background:#fff;border-radius:14px;padding:20px 24px;margin-top:14px;border:1px solid #d3e3e3}
+summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--ember);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:12px;color:var(--muted)}
+
+/* CTA */
+.cta{background:linear-gradient(135deg,var(--ember) 0%,#ff9b5e 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta h2{color:#fff}.cta .lead{margin:0 auto 32px;color:rgba(255,255,255,.92)}
+.cta .btn-primary{background:var(--night);box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+.cta .btn-primary:hover{background:#000}
+.cta-peaks{position:absolute;left:0;right:0;bottom:0;opacity:.18;width:100%}
+.contact-row{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin-top:34px;font-weight:600}
+.contact-row a{text-decoration:none;border-bottom:2px solid rgba(255,255,255,.5)}
+
+footer{background:var(--night);color:rgba(255,255,255,.6);padding:34px 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:820px){
+  section{padding:72px 0}
+  .split{grid-template-columns:1fr;gap:36px}
+  .menu-btn{display:block}
+  .nav ul{position:absolute;top:72px;left:0;right:0;flex-direction:column;background:rgba(11,31,44,.97);padding:24px;gap:18px;display:none}
+  .nav ul.open{display:flex}
+  .sun{right:-40px;width:170px;height:170px}
+  .portrait{max-width:380px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Mountain Sport Recovery home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#ff7a45"/><path d="M6 50 24 22l9 13 7-9 18 24z" fill="#0f2a3a"/><path d="M24 22l-6 9 4-2 3 3 3-4z" fill="#fff"/></svg>
+      Mountain Sport Recovery
+    </a>
+    <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <ul id="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#athletes">Who I Help</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#about">About Kate</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="btn btn-primary" href="#contact">Book a Session</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="padding-bottom:200px">
+  <div class="stars"></div>
+  <div class="sun"></div>
+
+  <svg class="ridge ridge-back" viewBox="0 0 1440 320" preserveAspectRatio="none" height="300" aria-hidden="true">
+    <path fill="#2c5a70" opacity=".75" d="M0 250 130 150l90 70 150-130 130 110 120-90 160 120 140-140 130 120 110-80 160 130 120-60v250H0z"/>
+  </svg>
+  <svg class="ridge" viewBox="0 0 1440 260" preserveAspectRatio="none" height="230" aria-hidden="true">
+    <path fill="#0f2a3a" d="M0 200 100 130l70 50 120-110 80 90 110-80 130 100 100-60 150 110 120-130 100 90 120-60 100 70 90-40v190H0z"/>
+    <path fill="#fff" opacity=".9" d="M290 70l-24 28 14-6 12 14 12-12 10 8zM770 90l-18 22 10-4 10 10 10-10zM1180 70l-22 26 12-5 10 12 14-12z"/>
+    <path fill="#fbfdfd" d="M0 238c240-30 520 8 760-6s480-30 680 0v28H0z"/>
+  </svg>
+
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow" style="color:var(--gold)">Acupuncture · Denver, Colorado</span>
+      <h1>Recover harder.<br><em>Climb higher.</em></h1>
+      <p>Sports-focused acupuncture with Kate Cauley, L.Ac. Helping Colorado athletes heal faster, ease pain and get back to the trails, slopes and crags they love.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">Book a Session →</a>
+        <a class="btn btn-ghost" href="#services">Explore Services</a>
+      </div>
+      <div class="badges">
+        <span>Licensed Acupuncturist</span>
+        <span>Denver, CO</span>
+        <span>Built for active bodies</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true">
+  <div>
+    SKIING <span>▲</span> SNOWBOARDING <span>▲</span> TRAIL RUNNING <span>▲</span> CLIMBING <span>▲</span> CYCLING <span>▲</span> HIKING <span>▲</span> LIFTING <span>▲</span> YOGA <span>▲</span>
+    SKIING <span>▲</span> SNOWBOARDING <span>▲</span> TRAIL RUNNING <span>▲</span> CLIMBING <span>▲</span> CYCLING <span>▲</span> HIKING <span>▲</span> LIFTING <span>▲</span> YOGA <span>▲</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">What I Treat</span>
+      <h2>Care that keeps you moving.</h2>
+      <p class="lead">Whether you're training for a race, rehabbing an injury or just tired of waking up sore, treatment is tailored to your body and your sport.</p>
+    </div>
+    <div class="grid">
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v6M12 8l-3 3M12 8l3 3M12 11v11"/><circle cx="12" cy="22" r=".6"/></svg></div>
+        <h3>Sports Acupuncture</h3>
+        <p>Targeted needling to calm pain, release stubborn muscle tension and support the body's natural healing for strains, tendon issues and overuse.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 12h3l2-5 4 10 3-8 2 3h4"/></svg></div>
+        <h3>Recovery &amp; Performance</h3>
+        <p>Between big efforts, support sleep, reduce soreness and help your nervous system shift out of fight-or-flight so training actually sticks.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/></svg></div>
+        <h3>Cupping</h3>
+        <p>Gentle suction therapy to increase circulation and loosen tight, knotted tissue in the back, shoulders, hips and legs.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Electro-Acupuncture</h3>
+        <p>Mild electrical stimulation paired with needles to deepen pain relief and encourage stubborn muscles to release.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.600-7 10-7 10z"/></svg></div>
+        <h3>Stress &amp; Sleep</h3>
+        <p>Training hard is stressful. Restore calm, improve sleep quality and balance the demands of work, life and sport.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 20 9 9l4 6 3-4 5 9z"/><path d="M9 9 7.500 12 9 11.500 10.500 12.500z"/></svg></div>
+        <h3>Altitude Adjustment</h3>
+        <p>New to the Front Range or heading up high? Support your body's adaptation to Colorado's elevation, dry air and big weekends.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="athletes" id="athletes">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Who I Help</span>
+      <h2>For everyone who plays in the mountains.</h2>
+      <p class="lead">From weekend warriors to competitive athletes, if you move hard and want to keep doing it for decades, this practice is for you.</p>
+      <div class="chips">
+        <span class="chip">⛷ Skiers &amp; riders</span>
+        <span class="chip">🏃 Trail runners</span>
+        <span class="chip">🧗 Climbers</span>
+        <span class="chip">🚴 Cyclists</span>
+        <span class="chip">🥾 Hikers &amp; peak baggers</span>
+        <span class="chip">🏋 Lifters</span>
+        <span class="chip">🧘 Desk-bound athletes</span>
+      </div>
+    </div>
+    <!-- Illustration -->
+    <div class="reveal">
+      <svg viewBox="0 0 440 400" role="img" aria-label="Illustration of mountain peaks with a sun and a trail" style="width:100%;height:auto;border-radius:24px;box-shadow:0 30px 60px -30px rgba(11,31,44,.5)">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#173f56"/><stop offset="1" stop-color="#ffb27a"/></linearGradient>
+        </defs>
+        <rect width="440" height="400" fill="url(#sky)"/>
+        <circle cx="320" cy="150" r="54" fill="#ffe2a8" opacity=".95"/>
+        <circle cx="320" cy="150" r="80" fill="#ffd08a" opacity=".25"/>
+        <path fill="#3b6b82" d="M0 280 90 150l50 70 60-110 90 130 60-60 90 100v120H0z"/>
+        <path fill="#fff" opacity=".9" d="M200 110l-24 36 14-8 10 12 12-14 10 8z"/>
+        <path fill="#1d4d4f" d="M0 330 70 250l60 50 80-90 90 100 60-50 80 70v70H0z"/>
+        <path fill="#0f2a3a" d="M0 380c80-40 140-10 220-24s150-30 220 0v44H0z"/>
+        <path d="M120 400c40-30 70-40 100-60s40-40 90-52" stroke="#ffc27a" stroke-width="5" fill="none" stroke-dasharray="2 12" stroke-linecap="round"/>
+        <g fill="#0f2a3a"><path d="M40 360l10-34 10 34zM62 366l8-28 8 28zM380 350l9-30 9 30z"/></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" style="color:var(--gold)">How It Works</span>
+      <h2>Your route back to the summit.</h2>
+      <p class="lead">A simple, personal plan, with no guesswork.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Talk it through</h3><p>We start with your goals, history, training load and what hurts. Your sport and your schedule shape the plan.</p></div>
+      <div class="step reveal"><h3>Treat</h3><p>A focused session using acupuncture and complementary techniques chosen for your body, in a calm, quiet room.</p></div>
+      <div class="step reveal"><h3>Recover</h3><p>Simple at-home guidance on rest, movement and recovery so the results carry past the table.</p></div>
+      <div class="step reveal"><h3>Get back out there</h3><p>We adjust as you progress and time treatments around races, trips and big training blocks.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap split">
+    <div class="portrait reveal">
+      <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <circle cx="300" cy="120" r="60" fill="#ffc27a" opacity=".35"/>
+        <path fill="#2e8b8b" opacity=".5" d="M0 360 110 220l60 80 80-130 150 190v140H0z"/>
+        <path fill="#0f2a3a" opacity=".7" d="M0 420 90 320l70 60 100-110 140 150v160H0z"/>
+        <!-- Replace with Kate's photo: <image href="kate.jpg" .../> -->
+        <circle cx="200" cy="190" r="56" fill="rgba(255,255,255,.18)"/>
+        <path d="M90 340c10-70 60-90 110-90s100 20 110 90z" fill="rgba(255,255,255,.18)"/>
+      </svg>
+      <div class="tag"><strong>Kate Cauley, L.Ac.</strong><br>Licensed Acupuncturist · Denver, CO</div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Meet Your Acupuncturist</span>
+      <h2>Hi, I'm Kate.</h2>
+      <p>I'm a licensed acupuncturist based in Denver, and Mountain Sport Recovery is built around the way Coloradans live: outside, active and always planning the next adventure.</p>
+      <p>My approach blends the time-tested practice of acupuncture with a practical understanding of training, injury and recovery. I listen closely, treat thoughtfully and focus on helping you do more of what you love, with less pain.</p>
+      <p>Whether you're nursing an injury, prepping for an event or just want to feel better in your body, I'd love to help.</p>
+      <div class="creds">
+        <div>✓ Licensed Acupuncturist</div>
+        <div>✓ Sports &amp; Recovery Focus</div>
+        <div>✓ Denver, Colorado</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap" style="max-width:820px">
+    <div class="reveal">
+      <span class="eyebrow">Good to Know</span>
+      <h2>Common questions</h2>
+    </div>
+    <details class="reveal"><summary>Does acupuncture hurt?</summary><p>Acupuncture needles are hair-thin, and most people feel little to nothing on insertion. You may notice a dull ache, warmth or heaviness. Many clients find sessions deeply relaxing.</p></details>
+    <details class="reveal"><summary>How many sessions will I need?</summary><p>It depends on what we're treating. Acute issues often respond within a few visits, while chronic or training-related problems may benefit from a short series, then occasional maintenance. We'll map it out together.</p></details>
+    <details class="reveal"><summary>Can I train after a session?</summary><p>Usually light activity is fine. Kate will give you specific guidance based on your treatment, and we can schedule sessions around races and key workouts.</p></details>
+    <details class="reveal"><summary>What should I wear?</summary><p>Comfortable, loose clothing that can be rolled up at the knees and elbows, or athletic wear you can move in.</p></details>
+    <details class="reveal"><summary>Do you take insurance?</summary><p>Please reach out and ask. Details on payment and coverage will be shared when you book.</p></details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <svg class="cta-peaks" viewBox="0 0 1440 200" preserveAspectRatio="none" height="160" aria-hidden="true"><path fill="#0f2a3a" d="M0 200 140 70l90 80 150-120 130 110 120-70 160 100 140-100 130 90 110-60 160 100v100z"/></svg>
+  <div class="wrap" style="position:relative">
+    <span class="eyebrow" style="color:#fff">Ready When You Are</span>
+    <h2>Let's get you back on the mountain.</h2>
+    <p class="lead">Book your first session with Kate and feel the difference of recovery built for active bodies.</p>
+    <a class="btn btn-primary" href="mailto:hello@mountainsportrecovery.com?subject=Appointment%20Request">Request an Appointment →</a>
+    <div class="contact-row">
+      <a href="mailto:hello@mountainsportrecovery.com">hello@mountainsportrecovery.com</a>
+      <a href="tel:+13035550123">(303) 555-0123</a>
+      <span>📍 Denver, Colorado</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Mountain Sport Recovery · Kate Cauley, L.Ac.</span>
+    <span>Denver, CO · mountainsportrecovery.com</span>
+  </div>
+</footer>
+
+<script>
+  const h=document.querySelector('header');
+  const onScroll=()=>h.classList.toggle('scrolled',scrollY>40);
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
+</script>
+</body>
+</html>
