@@ -13,7 +13,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2a3a'/%3E%3Cpath d='M6 50 24 22l9 13 7-9 18 24z' fill='%23ff7a45'/%3E%3Cpath d='M24 22l-6 9 4-2 3 3 3-4z' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,12 +33,13 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--snow);line-height:1.65;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;letter-spacing:-.01em}
+body{font-family:"DM Sans",system-ui,sans-serif;color:var(--ink);background:var(--snow);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Manrope,system-ui,sans-serif;line-height:1.1;letter-spacing:-.01em}
+em{font-family:Georgia,serif;font-style:italic}
 a{color:inherit}
 .wrap{width:min(1120px,100% - 40px);margin-inline:auto}
 section{padding:96px 0}
-.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ember-dk);margin-bottom:14px}
+.eyebrow{display:inline-block;font-family:Manrope,system-ui,sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ember-dk);margin-bottom:14px}
 h2{font-size:clamp(2rem,4.4vw,3.1rem);font-weight:800;margin-bottom:18px}
 .lead{font-size:1.12rem;color:var(--muted);max-width:60ch}
 
@@ -53,8 +54,11 @@ h2{font-size:clamp(2rem,4.4vw,3.1rem);font-weight:800;margin-bottom:18px}
 header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
 header.scrolled{background:rgba(11,31,44,.92);backdrop-filter:blur(10px);box-shadow:0 4px 24px rgba(0,0,0,.2)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:Fraunces,serif;font-weight:800;font-size:1.15rem}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:Manrope,system-ui,sans-serif;font-weight:800}
 .logo svg{width:34px;height:34px}
+.logo-text{display:flex;flex-direction:column;gap:3px;line-height:1.1}
+.logo-text strong{font-size:.84rem;letter-spacing:.055em}
+.logo-text small{font-size:.68rem;font-weight:500;letter-spacing:.08em}
 .nav ul{display:flex;gap:30px;list-style:none;align-items:center}
 .nav ul a{color:rgba(255,255,255,.88);text-decoration:none;font-size:.95rem;font-weight:500}
 .nav ul a:hover{color:var(--gold)}
@@ -75,7 +79,7 @@ header.scrolled{background:rgba(11,31,44,.92);backdrop-filter:blur(10px);box-sha
 @keyframes glow{to{transform:scale(1.12);opacity:.85}}
 .hero-inner{position:relative;z-index:3;max-width:700px}
 .hero h1{font-size:clamp(2.8rem,7.4vw,5.4rem);font-weight:800;margin-bottom:22px}
-.hero h1 em{font-style:normal;color:var(--gold)}
+.hero h1 em{color:var(--gold)}
 .hero p{font-size:1.2rem;color:rgba(255,255,255,.88);max-width:52ch;margin-bottom:34px}
 .hero .actions{display:flex;gap:14px;flex-wrap:wrap}
 .badges{display:flex;gap:22px;flex-wrap:wrap;margin-top:44px;font-size:.9rem;color:rgba(255,255,255,.8)}
@@ -85,7 +89,7 @@ header.scrolled{background:rgba(11,31,44,.92);backdrop-filter:blur(10px);box-sha
 
 /* Marquee strip */
 .strip{background:var(--night);color:rgba(255,255,255,.75);padding:20px 0;overflow:hidden;white-space:nowrap}
-.strip div{display:inline-block;animation:slide 32s linear infinite;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem}
+.strip div{display:inline-block;animation:slide 32s linear infinite;font-family:Manrope,system-ui,sans-serif;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem}
 .strip span{margin:0 26px;color:var(--ember)}
 @keyframes slide{to{transform:translateX(-50%)}}
 
@@ -112,7 +116,7 @@ header.scrolled{background:rgba(11,31,44,.92);backdrop-filter:blur(10px);box-sha
 .process h2{color:#fff}.process .lead{color:rgba(255,255,255,.7)}
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;margin-top:52px;counter-reset:s}
 .step{border-top:2px solid rgba(255,255,255,.18);padding-top:24px;position:relative}
-.step::before{counter-increment:s;content:"0" counter(s);font-family:Fraunces,serif;font-size:3rem;font-weight:800;color:var(--ember);display:block;margin-bottom:6px}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:Manrope,system-ui,sans-serif;font-size:3rem;font-weight:800;color:var(--ember);display:block;margin-bottom:6px}
 .step h3{font-size:1.3rem;margin-bottom:8px}
 .step p{color:rgba(255,255,255,.7);font-size:.97rem}
 
@@ -167,7 +171,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap nav">
     <a class="logo" href="#top" aria-label="Mountain Sport Recovery home">
       <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#ff7a45"/><path d="M6 50 24 22l9 13 7-9 18 24z" fill="#0f2a3a"/><path d="M24 22l-6 9 4-2 3 3 3-4z" fill="#fff"/></svg>
-      Mountain Sport Recovery
+      <span class="logo-text"><strong>MOUNTAIN SPORT RECOVERY</strong><small>Denver Colorado</small></span>
     </a>
     <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
     <ul id="menu">
