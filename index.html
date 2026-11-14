@@ -78,10 +78,12 @@ header.scrolled{background:rgba(11,31,44,.92);backdrop-filter:blur(10px);box-sha
   background:radial-gradient(circle,#ffe2a8 0%,#ffb066 45%,rgba(255,150,80,0) 70%);filter:blur(2px);animation:glow 6s ease-in-out infinite alternate}
 @keyframes glow{to{transform:scale(1.12);opacity:.85}}
 .hero-inner{position:relative;z-index:3;max-width:700px}
-.hero h1{font-size:clamp(2.8rem,7.4vw,5.4rem);font-weight:800;margin-bottom:22px}
-.hero h1 em{color:var(--gold)}
-.hero p{font-size:1.2rem;color:rgba(255,255,255,.88);max-width:52ch;margin-bottom:34px}
+.hero .eyebrow{text-transform:none;letter-spacing:.04em;font-weight:600}
+.hero h1{font-family:"DM Sans",system-ui,sans-serif;font-size:15px;font-weight:500;line-height:20px;letter-spacing:-.05em;max-width:16ch;margin-bottom:8px}
+.hero-accent{font-family:Georgia,serif;font-size:clamp(1.12rem,2.64vw,1.8rem);font-style:italic;line-height:1.05;color:var(--gold);margin-bottom:20px}
+.hero p.hero-description{font-size:1.05rem;color:rgba(255,255,255,.9);max-width:58ch;margin-bottom:34px}
 .hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero .btn-ghost{font-family:Manrope,system-ui,sans-serif}
 .badges{display:flex;gap:22px;flex-wrap:wrap;margin-top:44px;font-size:.9rem;color:rgba(255,255,255,.8)}
 .badges span::before{content:"✦ ";color:var(--gold)}
 .ridge{position:absolute;left:0;right:0;bottom:-1px;width:100%;display:block;z-index:2}
@@ -201,17 +203,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
   <div class="wrap">
     <div class="hero-inner">
-      <span class="eyebrow" style="color:var(--gold)">Acupuncture · Denver, Colorado</span>
-      <h1>Play. Presence. Possibility.</h1>
-      <p>Sports-focused acupuncture with Kate Cauley, L.Ac. Helping Colorado athletes heal faster, ease pain and get back to the trails, slopes and crags they love.</p>
+      <span class="eyebrow" style="color:var(--gold)">ACUPUNCTURE • FUNCTIONAL RECOVERY</span>
+      <h1>Get back to doing<br>what moves you.</h1>
+      <p class="hero-accent">Move Well. Live Fully</p>
+      <p class="hero-description">Targeted acupuncture and functional assessment for muscle, joint and nerve-related conditions. Helping you move with greater ease and return to the activities that matter.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#contact">Book a Session →</a>
-        <a class="btn btn-ghost" href="#services">Explore Services</a>
-      </div>
-      <div class="badges">
-        <span>Licensed Acupuncturist</span>
-        <span>Denver, CO</span>
-        <span>Built for active bodies</span>
+        <a class="btn btn-ghost" href="#services">EXPLORE OUR APPROACH</a>
       </div>
     </div>
   </div>
