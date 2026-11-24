@@ -33,7 +33,7 @@ a { color: inherit; text-decoration: none; }
 .hero-note { position: absolute; right: clamp(22px, 5vw, 75px); bottom: 22px; z-index: 1; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #f5eee2; }
 .audience-intro { background: var(--cream); padding: 42px 24px 37px; }
 .section-inner { width: min(1120px, 100%); margin: 0 auto; }
-.audience-intro h2 { max-width: 950px; margin: 0; font: 600 clamp(27px, 4vw, 43px)/1.18 var(--serif); letter-spacing: -.02em; }
+.audience-intro h2 { max-width: 950px; margin: 0 auto; font: italic 600 clamp(27px, 4vw, 43px)/1.18 var(--serif); letter-spacing: -.02em; text-align: center; }
 .activity-ticker { overflow: hidden; background: var(--navy); color: #f8f3e9; white-space: nowrap; padding: 13px 0; }
 .ticker-track { display: flex; align-items: center; justify-content: space-around; gap: 25px; width: max-content; min-width: 200%; animation: ticker 42s linear infinite; font-size: 11px; font-weight: 700; letter-spacing: .19em; }
 .ticker-track i { color: #d66a37; font-style: normal; font-size: 13px; }
